@@ -405,6 +405,138 @@ pug: 89.09%
 Griffon Bruxellois: 9.61%
 Pekingese: 0.66%</p>
 
+<h2> 24 февраля, 2026</h2>
+ <p> <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Способы оплаты</title>
+    <style>
+        /* Базовые стили для секции оплаты */
+        .payment-section {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            color: #333;
+        }
+
+        .payment-section h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .payment-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .payment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .payment-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .payment-desc {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .secure-note {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.85em;
+            color: #888;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Начало секции Оплата -->
+    <section class="payment-section">
+        <h2>Как оплатить заказ?</h2>
+        
+        <div class="payment-methods">
+            <!-- Способ 1: Банковская карта -->
+            <div class="payment-card">
+                <span class="icon">💳</span>
+                <span class="payment-title">Банковской картой онлайн</span>
+                <p class="payment-desc">
+                    Visa, Mastercard, МИР. Оплата происходит мгновенно через защищенный шлюз сразу после оформления заказа.
+                </p>
+            </div>
+
+            <!-- Способ 2: СБП -->
+            <div class="payment-card">
+                <span class="icon">📱</span>
+                <span class="payment-title">СБП (Быстрый платеж)</span>
+                <p class="payment-desc">
+                    Оплатите заказ по QR-коду через приложение вашего банка. Комиссия отсутствует.
+                </p>
+            </div>
+
+            <!-- Способ 3: При получении -->
+            <div class="payment-card">
+                <span class="icon">📦</span>
+                <span class="payment-title">При получении</span>
+                <p class="payment-desc">
+                    Наличными курьеру или картой терминалом при доставке. Доступно не для всех регионов.
+                </p>
+            </div>
+            
+            <!-- Способ 4: Для юрлиц -->
+            <div class="payment-card">
+                <span class="icon">🏢</span>
+                <span class="payment-title">Безналичный расчет</span>
+                <p class="payment-desc">
+                    Оплата по счету для юридических лиц. Документы предоставляются автоматически.
+                </p>
+            </div>
+        </div>
+
+        <div class="secure-note">
+            🔒 Все платежи защищены стандартом безопасности PCI DSS. Мы не храним данные ваших карт.
+        </div>
+    </section>
+    <!-- Конец секции Оплата -->
+
+</body>
+</html>
+ 
+ 
+ </p>
 
 
 
