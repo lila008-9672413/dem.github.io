@@ -537,7 +537,114 @@ Pekingese: 0.66%</p>
  
  
  </p>
+<style>
+    .pay-widget {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    }
+    .pay-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+    .pay-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .pay-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        transition: background 0.2s;
+    }
+    .pay-item:hover {
+        background: #f0f2f5;
+    }
+    .pay-icon {
+        font-size: 22px;
+        line-height: 1;
+    }
+    .pay-content strong {
+        display: block;
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 2px;
+    }
+    .pay-content span {
+        font-size: 13px;
+        color: #666;
+        line-height: 1.3;
+    }
+    .pay-footer {
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top: 1px solid #eee;
+        text-align: center;
+        font-size: 12px;
+        color: #888;
+    }
+    @media (max-width: 480px) {
+        .pay-grid { grid-template-columns: 1fr; }
+    }
+</style>
 
+<div class="pay-widget">
+    <h3 class="pay-title">Как оплатить заказ</h3>
+    
+    <div class="pay-grid">
+        <!-- Карта -->
+        <div class="pay-item">
+            <div class="pay-icon">💳</div>
+            <div class="pay-content">
+                <strong>Картой онлайн</strong>
+                <span>Visa, MC, МИР. Мгновенно.</span>
+            </div>
+        </div>
+
+        <!-- СБП -->
+        <div class="pay-item">
+            <div class="pay-icon">📱</div>
+            <div class="pay-content">
+                <strong>СБП</strong>
+                <span>По QR-коду. Без комиссии.</span>
+            </div>
+        </div>
+
+        <!-- При получении -->
+        <div class="pay-item">
+            <div class="pay-icon">📦</div>
+            <div class="pay-content">
+                <strong>При получении</strong>
+                <span>Наличными или терминал.</span>
+            </div>
+        </div>
+
+        <!-- Юрлица -->
+        <div class="pay-item">
+            <div class="pay-icon">🏢</div>
+            <div class="pay-content">
+                <strong>Для компаний</strong>
+                <span>Оплата по счету.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="pay-footer">
+        🔒 Платежи защищены стандартом PCI DSS
+    </div>
+</div>
 
 
      
