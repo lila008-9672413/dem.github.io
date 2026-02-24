@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект: Кровотечение во время беременности</title>
+    <!-- Подключение стилей (можно вынести в отдельный файл style.css или оставить здесь) -->
+    <style>
+        :root {
+            --primary-color: #d63384; /* Медицинский розовый/красный */
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --accent-color: #ffc107;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        header {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        h1 { margin: 0; font-size: 2.5rem; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        h2 { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); display: inline-block; padding-bottom: 5px; }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .stat-card {
+            background: var(--secondary-color);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th { background-color: var(--primary-color); color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        
+        .alert-box {
+            background-color: #fff3cd;
+            border-left: 5px solid var(--accent-color);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .btn:hover { background-color: #b02a6b; }
+        
+        /* Адаптивность для мобильных */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .container { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <h1>Кровотечение во время беременности</h1>
+        <p>Индивидуальный проект | Автор: [Ваше ФИО]</p>
+        <p>[Ваше учебное заведение], 2024</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Секция 1: Актуальность и Цель -->
+        <section id="intro">
+            <h2>Актуальность проблемы</h2>
+            <p>Акушерские кровотечения остаются одной из ведущих причин материнской смертности и перинатальных потерь worldwide. Своевременная диагностика и правильная тактика ведения позволяют спасти жизнь матери и ребенка.</p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">14%</div>
+                    <p>Доля кровотечений в структуре материнской смертности</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">I-III</div>
+                    <p>Триместры риска требуют разного подхода</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <p>Необходимость экстренной госпитализации</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 2: Классификация -->
+        <section id="classification">
+            <h2>Классификация по срокам</h2>
+            <p>Тактика лечения напрямую зависит от срока гестации и причины кровотечения.</p>
+            
+            <h3>I Триместр (до 12 недель)</h3>
+            <ul>
+                <li><strong>Угрожающий аборт:</strong> Тянущие боли, мажущие выделения.</li>
+                <li><strong>Начавшийся аборт:</strong> Усиление болей, кровянистые выделения.</li>
+                <li><strong>Внематочная беременность:</strong> Острая боль, шоковое состояние.</li>
+                <li><strong>Пузырный занос:</strong> Патология развития плодного яйца.</li>
+            </ul>
+
+            <h3>II и III Триместры</h3>
+            <ul>
+                <li><strong>Предлежание плаценты:</strong> Безболезненное ярко-алое кровотечение.</li>
+                <li><strong>Преждевременная отслойка плаценты (ПОНРП):</strong> Боль в животе, темная кровь, гипертонус матки.</li>
+                <li><strong>Разрыв матки:</strong> Катастрофическое состояние, чаще при рубце на матке.</li>
+            </ul>
+        </section>
+
+        <!-- Секция 3: Диагностика (Таблица) -->
+        <section id="diagnostics">
+            <h2>Методы диагностики</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Метод</th>
+                        <th>Что показывает</th>
+                        <th>Особенности</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>УЗИ</strong></td>
+                        <td>Локализация плодного яйца, состояние плаценты, ретроплацентарная гематома</td>
+                        <td>"Золотой стандарт", безопасно для плода</td>
+                    </tr>
+                    <tr>
+                        <td><strong>КТГ</strong></td>
+                        <td>Сердцебиение плода, тонус матки</td>
+                        <td>Применяется после 32 недель</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Лаборатория</strong></td>
+                        <td>Hb, Ht, группа крови, резус-фактор, коагулограмма</td>
+                        <td>Оценка степени кровопотери</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Осмотр в зеркалах</strong></td>
+                        <td>Исключение патологии шейки матки</td>
+                        <td><strong>ЗАПРЕЩЕНО</strong> пальцевое исследование при предлежании!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Секция 4: Алгоритм помощи (Важно!) -->
+        <section id="algorithm">
+            <h2>Алгоритм неотложной помощи</h2>
+            <div class="alert-box">
+                <strong>ВАЖНО:</strong> Любое кровотечение при беременности — показание для вызова скорой помощи (103 или 112).
+            </div>
+            <ol>
+                <li>Вызвать бригаду СМП.</li>
+                <li>Уложить пациентку на горизонтальную поверхность, приподнять ноги (для притока крови к мозгу).</li>
+                <li>Положить холод на низ живота (пузырь со льдом через ткань, 15-20 мин).</li>
+                <li>Обеспечить доступ свежего воздуха.</li>
+                <li>Собрать документы (паспорт, обменная карта, полис).</li>
+                <li><strong>НЕ давать еду и воду</strong> (возможна экстренная операция под наркозом).</li>
+                <li><strong>НЕ проводить влагалищные исследования</strong> самостоятельно.</li>
+            </ol>
+        </section>
+
+        <!-- Секция 5: Практическая часть / Заключение -->
+        <section id="conclusion">
+            <h2>Заключение</h2>
+            <p>В ходе работы над проектом были изучены основные причины акушерских кровотечений. Главный вывод: прогноз для матери и плода напрямую зависит от времени, прошедшего с момента начала кровотечения до начала оказания квалифицированной медицинской помощи.</p>
+            <p>Профилактика включает планирование беременности, лечение экстрагенитальной патологии и регулярное наблюдение в женской консультации.</p>
+            
+            <h3>Список литературы</h3>
+            <ul>
+                <li>Клинические рекомендации МЗ РФ «Акушерские кровотечения» (2023).</li>
+                <li>Акушерство: Национальное руководство / под ред. Г.М. Савельевой.</li>
+                <li>Статистические данные ВОЗ за 2023 год.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Индивидуальный проект. Все права защищены.</p>
+        <p>Контакт для связи: [Ваш Email]</p>
+    </footer>
+
+</body>
+</html>
+
