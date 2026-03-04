@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Акушерские кровотечения - Презентация</title>
     <style>
+        Акопова Джульетта Гариковна 
+        2026 год 
         :root {
             --primary: #667eea;
             --secondary: #764ba2;
@@ -64,7 +66,6 @@
         h3 { font-size: 1.4rem; color: #4a5568; margin-top: 20px; margin-bottom: 10px; }
         p, li { font-size: 1.2rem; line-height: 1.6; margin-bottom: 12px; color: #4a5568; }
         ul { margin-left: 25px; }
-        ol { margin-left: 25px; }
         
         .center-text { text-align: center; }
         .highlight { background: #fffaf0; border-left: 5px solid var(--accent-yellow); padding: 15px; margin: 15px 0; border-radius: 4px; }
@@ -111,8 +112,6 @@
             h2 { font-size: 1.5rem; }
             p, li { font-size: 1rem; }
             .controls { flex-direction: column; gap: 15px; }
-            table { font-size: 0.9rem; }
-            th, td { padding: 8px 10px; }
         }
     </style>
 </head>
@@ -127,10 +126,7 @@
             <h2 style="border: none; color: #718096; font-size: 1.8rem;">Этиология, клиника и алгоритм неотложной помощи</h2>
             <div style="width: 100px; height: 4px; background: var(--primary); margin: 30px 0;"></div>
             <p style="font-size: 1.4rem;"><strong>Роль среднего медицинского персонала</strong></p>
-            <p style="margin-top: 40px; font-size: 1.2rem; color: #718096;">
-                Автор: Акопова Джульетта Гариковна<br>
-                2026 год
-            </p>
+            <p style="margin-top: 40px; font-size: 1.2rem; color: #718096;">Автор проекта: [Ваше ФИО]<br>2024 год</p>
         </div>
     </div>
 
@@ -384,8 +380,8 @@
             <p style="font-size: 1.5rem; margin-top: 20px;">Готов ответить на ваши вопросы.</p>
             <div style="margin-top: 40px; padding: 20px; background: #f7fafc; border-radius: 10px;">
                 <p><strong>Контакты:</strong></p>
-                <p>Акопова Джульетта Гариковна</p>
-                <p>[Ваш Email] | [Ваш Телефон]</p>
+                <p>[Ваш Email]</p>
+                <p>[Ваш Телефон]</p>
             </div>
         </div>
     </div>
@@ -425,18 +421,14 @@
     // Управление клавиатурой
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowRight' || e.key === ' ') {
-            e.preventDefault();
             if (currentSlide < totalSlides - 1) changeSlide(1);
         } else if (e.key === 'ArrowLeft') {
-            e.preventDefault();
             if (currentSlide > 0) changeSlide(-1);
         }
     });
 
-    // Инициализация
     updateButtons();
 </script>
 
 </body>
 </html>
-       
