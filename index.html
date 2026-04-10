@@ -1,92 +1,21 @@
- <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <title>Мой блог</title>
-  <link type="text/css" rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffebf0; /* Нежно-розовый фон */
-      color: #222;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    h1, h2, h3 {
-      color: #c2185b; /* Темно-розовый для заголовков */}
-   
-   .bmw-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin: 15px 0;
-      border: 2px solid #f8bbd0;
-    }
-    pre {
-      background-color: #fff;
-      padding: 14px;
-      border-radius: 6px;
-      overflow-x: auto;
-      border-left: 4px solid #f48fb1;
-    }
-    a {
-      color: #d81b60;
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-
-  <p>Иконки: <a target="_blank" href="https://icons8.com/icon/yHeF9urVx2aM/confetti-ball">Новый год</a> иконка от <a target="_blank" href="https://icons8.com">Icons8</a></p>
-  
-<p><<a href="Prject/project.html">Перейти на страницу проекта</a> ></p>
- 
-
-  <h2>19.12.2025</h2>
-  <p><img src="Icons/icons8.png" alt="Новогодняя иконка"></p>
-  <p>Поздравление с Наступающим 2026 годом читайте <a href="Congratulations2026.html">здесь</a>. 🎄✨</p>
-
-  <h2>06.12.2025</h2>
-  <p>Пусть Новый год принесёт вдохновение, уют и новые возможности! Поздравление — <a href="Congratulations2026.html">здесь</a>.</p>
-
-  <h2>15 октября, 2025</h2>
-  <p>Я сделала Новогодние кроссворды для сайта <a href="https://lila008-9672413.github.io/dem.github.io/" title="Блог моего друга">здесь</a> 🎁</p>
-
-  <h2>1 сентября, 2025</h2>
-  <blockquote>Путешествие в тысячу миль начинается с одного шага (Лао Цзы)</blockquote>
-  <p>Оставляю в прошлом скучную неинтересную локальную файловую систему ради Всемирной паутины.</p>
-
-  <h2>13 января, 2026</h2>
-  <h1>Как устроены доменные имена</h1>
-  <p>Доменное имя моего сайта состоит из нескольких уровней: «.» — корневой уровень, «io» — домен верхнего уровня, «github» — домен второго уровня, «lila008-9672413» — поддомен.</p>
-
- 
-<h2>16 января, 2026</h2>
-    Апельсин — К=17<br>
-    Абрикос — К=27<br>
-    а. ФХНЗКЧ — ПРИВЕТ К=5<br>
-    б. ЦЕБФ — ВЕСНА К=20<br>
-    АКОПОВА — ЙФШЩШЛЙ (при ключе k=10)
-  </p>
-
-  <!-- Криптография -->
-  
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Мой блог</title>
+  
   <!-- Подключение шрифта Caveat -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet" />
-  <!-- Стили -->
+  
+  <!-- Основные стили -->
+  <link type="text/css" rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Caveat', cursive, Arial, sans-serif;
-      background-color: #ffebf0; /* Нежно-розовый фон */
+      background-color: #ffebf0;
       color: #222;
       margin: 0;
       padding: 20px;
@@ -97,7 +26,7 @@
     }
 
     h1, h2, h3 {
-      color: #c2185b; /* Малиновый */
+      color: #c2185b;
       margin-top: 1.2em;
     }
 
@@ -119,15 +48,24 @@
       height: auto;
     }
 
-    .gift-img {
+    .bmw-img, .gift-img {
       display: block;
-      margin: 24px auto;
+      margin: 15px auto;
       max-width: 220px;
       border-radius: 12px;
+      border: 2px solid #f8bbd0;
       box-shadow: 0 6px 16px rgba(194, 24, 91, 0.25);
     }
 
-    /* Снежинки */
+    pre {
+      background-color: #fff;
+      padding: 14px;
+      border-radius: 6px;
+      overflow-x: auto;
+      border-left: 4px solid #f48fb1;
+    }
+
+    /* Анимация снежинок */
     .snowflake {
       position: absolute;
       top: -30px;
@@ -161,21 +99,55 @@
         snow.style.fontSize = (16 + Math.random() * 14) + 'px';
         snow.style.animationDuration = (6 + Math.random() * 8) + 's';
         document.body.appendChild(snow);
-
-        // Удаляем после завершения анимации
         setTimeout(() => snow.remove(), 14000);
       }
     });
   </script>
 
-  <!-- Основной контент -->
+  <!-- Навигация и атрибуция -->
   <p>
     Иконки: 
     <a target="_blank" href="https://icons8.com/icon/yHeF9urVx2aM/confetti-ball">Новый год</a> 
     иконка от 
     <a target="_blank" href="https://icons8.com">Icons8</a>
   </p>
-      <!-- Новогодний подарок -->
+  
+  <p><a href="Project/project.html">Перейти на страницу проекта</a></p>
+
+  <!-- Записи блога в хронологическом порядке -->
+  
+  <h2>19.12.2025</h2>
+  <p>
+    <img src="Icons/icons8.png" alt="Новогодняя иконка">
+  </p>
+  <p>Поздравление с Наступающим 2026 годом читайте <a href="Congratulations2026.html">здесь</a>. 🎄✨</p>
+
+  <h2>06.12.2025</h2>
+  <p>Пусть Новый год принесёт вдохновение, уют и новые возможности! Поздравление — <a href="Congratulations2026.html">здесь</a>.</p>
+
+  <h2>15 октября, 2025</h2>
+  <p>Я сделала Новогодние кроссворды для сайта <a href="https://lila008-9672413.github.io/dem.github.io/" title="Блог моего друга">здесь</a> 🎁</p>
+
+  <h2>1 сентября, 2025</h2>
+  <blockquote>Путешествие в тысячу миль начинается с одного шага (Лао Цзы)</blockquote>
+  <p>Оставляю в прошлом скучную неинтересную локальную файловую систему ради Всемирной паутины.</p>
+
+  <h2>13 января, 2026</h2>
+  <h1>Как устроены доменные имена</h1>
+  <p>Доменное имя моего сайта состоит из нескольких уровней: «.» — корневой уровень, «io» — домен верхнего уровня, «github» — домен второго уровня, «lila008-9672413» — поддомен.</p>
+
+  <h2>16 января, 2026</h2>
+  <p>
+    Апельсин — К=17<br>
+    Абрикос — К=27<br>
+    а. ФХНЗКЧ — ПРИВЕТ К=5<br>
+    б. ЦЕБФ — ВЕСНА К=20<br>
+    АКОПОВА — ЙФШЩШЛЙ (при ключе k=10)
+  </p>
+
+  <!-- Криптография -->
+
+  <!-- Новогодний подарок -->
   <img 
     src="Images/gift.jpg" 
     onerror="this.src='https://via.placeholder.com/220x220/c2185b/ffffff?text=🎁+Подарок'; this.onerror=null;" 
@@ -183,54 +155,46 @@
     class="gift-img"
   >
 
+  <h2>18 февраля, 2026</h2>
+  <p>
+    Ответ модели:<br>
+    <strong>Топ-3 предсказаний:</strong><br>
+    pug: 89.09%<br>
+    Griffon Bruxellois: 9.61%<br>
+    Pekingese: 0.66%
+  </p>
+
+  <h2>24 февраля, 2026</h2>
+  <p>
+    <strong>Вопрос пользователя:</strong> Сколько ждать мой заказ?<br>
+    <strong>Найден FAQ-вопрос:</strong> Как быстро доставляется заказ? (sim=0.706)<br>
+    <strong>Ответ бот-FAQ:</strong> Наш стандартный срок доставки — 3–5 рабочих дней.
+  </p>
+
+  <h2>18 марта, 2026</h2>
+  <p>
+    Студент занимался 5 часов.<br>
+    <strong>Прогноз баллов:</strong> 50.23
+  </p>
+
+  <h2>24 марта, 2026</h2>
+  <p>
+    Ответ модели:<br>
+    0.69<br>
+    1.0
+  </p>
+
+  <h2>1 апреля, 2026</h2>
+  <p>
+    Ответ модели:<br>
+    Ошибка на обучении (MSE): 0.017956755485474322<br>
+    <em>НЕинтерпретируемАЯ</em>
+  </p>
+
+  <h2>4 апреля, 2026</h2>
+  <p>
+    <a href="Диаграмма без названия(4).drawio">🗄️ БАЗА ДАННЫХ</a>
+  </p>
+
 </body>
 </html>
-   
- <h2> 18 февраля, 2026</h2>
- <p> Ответ модели:Топ-3 предсказаний:
-pug: 89.09%
-Griffon Bruxellois: 9.61%
-Pekingese: 0.66%</p>
-
-<<h2> 24 февраля, 2026</h2>
- <p> <!DOCTYPE html>
-<html lang="ru">
-<head> 
-Вопрос пользователя: Сколько ждать мой заказ?
-Найден FAQ-вопрос: Как быстро доставляется заказ? (sim=0.706)
-Ответ бот-FAQ: Наш стандартный срок доставки — 3–5 рабочих дней.
-</p>
-
-<h2> 18 марта , 2026</h2>
-  <p> Студент занимался 5 часов
-Прогноз баллов: 50.23</p>
-
-<h2>  24 марта,2026</h2>
-<p>Ответ модели</p>
-<p> 0.69 </p>
-<p> 1.0 </p>
-
-<h2>  1 АПРЕЛЯ ,2026</h2>
-<p>Ответ модели</p>
-<p>Ошибка на обучении (MSE): 0.017956755485474322</p>
-<p> НЕинтерпретируемАЯ </p>
-
-
- 
- <h2>  4 АПРЕЛЯ ,2026</h2>
-<a href="Диаграмма без названия(4).drawio">БАЗА ДАННЫХ</a>
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
- 
