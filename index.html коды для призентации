@@ -1,1 +1,164 @@
 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кровотечение во время беременности | Акопова Д.Г.</title>
+  <style>
+    :root {
+      --primary: #0056b3;
+      --primary-dark: #003d80;
+      --bg-light: #f4f6f9;
+      --text: #2c3e50;
+      --accent: #e74c3c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg-light);
+      color: var(--text);
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+
+    .slide {
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Обложка */
+    .title-slide {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+    }
+    .motto {
+      font-size: 1.1rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-bottom: 0.5rem;
+    }
+    .college {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+    }
+    .title-slide h1 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Контент / Автор */
+    .content-slide { background: white; }
+    .content-slide h2 { color: var(--primary); font-size: 2rem; margin-bottom: 1.5rem; }
+    .info-block {
+      max-width: 700px;
+      font-size: 1.15rem;
+      line-height: 1.6;
+    }
+    .info-block p { margin-bottom: 0.8rem; }
+    .highlight { color: var(--primary); font-weight: 600; }
+
+    /* Контакты */
+    .contacts-slide { background: #eef2f7; }
+    .contacts-slide h2 { color: var(--primary-dark); font-size: 1.8rem; margin-bottom: 1.5rem; }
+    .contact-grid {
+      display: grid;
+      gap: 1rem;
+      font-size: 1.05rem;
+    }
+
+    /* Финал */
+    .thank-slide {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+    }
+    .thank-slide h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: 1rem; }
+    .thank-slide p { font-size: 1.2rem; opacity: 0.9; }
+
+    /* Навигация-подсказка */
+    .scroll-hint {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    /* Адаптив */
+    @media (max-width: 600px) {
+      .slide { padding: 1.5rem 1rem; }
+      .info-block, .contact-grid { text-align: left; }
+    }
+
+    /* Для печати / сохранения в PDF */
+    @media print {
+      body { height: auto; scroll-snap-type: none; overflow: visible; }
+      .slide { page-break-after: always; height: auto; min-height: 100vh; padding: 2cm; }
+      .scroll-hint { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Слайд 1: Титульный -->
+  <section class="slide title-slide">
+    <div class="motto">Theoria Cum Praxis</div>
+    <div class="college">Медицинский колледж РАМН (с 1959 г.)</div>
+    <h1>Кровотечение во время беременности</h1>
+    <p class="subtitle">Учебная презентация</p>
+    <div class="scroll-hint">Прокрутите вниз ↓</div>
+  </section>
+
+  <!-- Слайд 2: Об авторе -->
+  <section class="slide content-slide">
+    <h2>Сведения об авторе</h2>
+    <div class="info-block">
+      <p><span class="highlight">Студентка:</span> Акопова Джульетта Гариковна</p>
+      <p><span class="highlight">Группа:</span> 107С</p>
+      <p><span class="highlight">Учебное заведение:</span><br>
+        ФГБПОУ «Медицинский колледж»<br>
+        (МК РАМН)</p>
+    </div>
+  </section>
+
+  <!-- Слайд 3: Контакты -->
+  <section class="slide contacts-slide">
+    <h2>Контактная информация</h2>
+    <div class="contact-grid">
+      <p>📍 117105, г. Москва, Варшавское шоссе, д. 16А</p>
+      <p>📞 Тел.: 8 (499) 418-00-02</p>
+      <p>✉️ E-mail: mkramn@inbox.ru</p>
+      <p>🌐 <a href="https://www.mkramn.ru" target="_blank" rel="noopener" style="color:var(--primary);">www.mkramn.ru</a></p>
+    </div>
+  </section>
+
+  <!-- Слайд 4: Финальный -->
+  <section class="slide thank-slide">
+    <h1>Спасибо за внимание!</h1>
+    <p>Готова ответить на ваши вопросы</p>
+  </section>
+
+</body>
+</html>
+
